@@ -1,7 +1,7 @@
 /** @type {import("pliny/config").PlinyConfig } */
 const siteMetadata = {
   title: "ENDzZ's Blog",
-  author: 'Xudong Zhou',
+  author: 'Michael Zhou',
   headerTitle: "ENDzZ's Blog",
   description: 'Check the latest of me here.',
   language: 'en-us',
@@ -17,7 +17,7 @@ const siteMetadata = {
   // twitter: 'https://twitter.com/Twitter',
   // facebook: 'https://facebook.com',
   // youtube: 'https://youtube.com',
-  linkedin: 'https://www.linkedin.com/in/xudong-zhou/',
+  linkedin: 'https://www.linkedin.com/in/mic-zhou/',
   // threads: 'https://www.threads.net',
   // instagram: 'https://www.instagram.com',
   // medium: 'https://medium.com',
