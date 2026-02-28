@@ -1,0 +1,22 @@
+name: Template Sync
+
+on:
+  schedule:
+  - cron: "0 0 1 * *"
+  workflow_dispatch:
+
+jobs:
+  template_sync:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: actions-template-sync
+        uses: AndreasAugustin/actions-template-sync@v2
+        with:
+          source_repo_path: ScoopInstaller/BucketTemplate
+          upstream_branch: master
+          pr_labels: template sync
