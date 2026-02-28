@@ -1,2 +1,6 @@
 .github/FUNDING.yml
+data/headerNavLinks.ts
+data/projectsData.ts
 data/siteMetadata.js
+next.config.js
+README.md
