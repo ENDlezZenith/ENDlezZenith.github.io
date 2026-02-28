@@ -17,6 +17,6 @@ jobs:
       - name: actions-template-sync
         uses: AndreasAugustin/actions-template-sync@v2
         with:
-          source_repo_path: ScoopInstaller/BucketTemplate
-          upstream_branch: master
+          source_repo_path: timlrx/tailwind-nextjs-starter-blog
+          upstream_branch: main
           pr_labels: template sync
