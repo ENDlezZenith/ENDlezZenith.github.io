@@ -16,7 +16,7 @@ jobs:
       - name: Install pnpm and Node.js
         uses: pnpm/setup@v2
         with:
-          version: 11
+          version: 12
           runtime: node@24
 
       - name: Build pages
