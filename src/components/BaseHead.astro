@@ -34,6 +34,26 @@ const { title, description, image = FallbackImage } = Astro.props;
 
 <Font cssVariable="--font-atkinson" preload />
 
+<script is:inline>
+	const loadCanvasNest = () => {
+		const canvasNest = document.createElement('script');
+		canvasNest.src =
+			'https://cdn.jsdelivr.net/npm/canvas-nest.js@2.0.4/dist/canvas-nest.min.js';
+		canvasNest.setAttribute('color', '204,102,255');
+		canvasNest.setAttribute('pointColor', '255,255,255');
+		canvasNest.setAttribute('opacity', '0.5');
+		canvasNest.setAttribute('count', '99');
+		canvasNest.setAttribute('zIndex', '-1');
+		document.head.append(canvasNest);
+	};
+
+	if (document.readyState === 'loading') {
+		document.addEventListener('DOMContentLoaded', loadCanvasNest, { once: true });
+	} else {
+		loadCanvasNest();
+	}
+</script>
+
 <!-- Canonical URL -->
 <link rel="canonical" href={canonicalURL} />
 
